@@ -132,7 +132,7 @@ export default function PrivacyPolicyPage() {
                 <div className="space-y-2 opacity-90">
                   <p className="text-xl font-bold">S & A Movers</p>
                   <p>Ontario, Canada</p>
-                  <p>Email: <a href="mailto:info@example.com" className="underline hover:text-secondary transition-colors">info@example.com</a></p>
+                  <p>Email: <a href="mailto:info@sandamovers.ca" className="underline hover:text-secondary transition-colors">info@sandamovers.ca</a></p>
                   <p>Website: <a href="https://sandamovers.ca" className="underline hover:text-secondary transition-colors">sandamovers.ca</a></p>
                 </div>
               </section>

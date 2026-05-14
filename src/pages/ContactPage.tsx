@@ -75,7 +75,7 @@ export default function ContactPage() {
                       </div>
                       <div>
                         <h3 className="font-bold text-gray-900 mb-1 uppercase tracking-wider text-sm">Email</h3>
-                        <p className="text-xl font-black text-primary">info@example.com</p>
+                        <p className="text-xl font-black text-primary">info@sandamovers.ca</p>
                       </div>
                     </div>
 

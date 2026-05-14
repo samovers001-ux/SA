@@ -77,7 +77,7 @@ export default function Footer() {
               <div className="w-10 h-10 rounded-full bg-secondary flex items-center justify-center group-hover:rotate-12 transition-transform">
                 <Mail size={18} />
               </div>
-              <a href="mailto:info@example.com" className="opacity-80 hover:opacity-100 transition-opacity">info@example.com</a>
+              <a href="mailto:info@sandamovers.ca" className="opacity-80 hover:opacity-100 transition-opacity">info@sandamovers.ca</a>
             </li>
             <li className="flex items-center gap-4 group">
               <div className="w-10 h-10 rounded-full bg-secondary flex items-center justify-center group-hover:rotate-12 transition-transform">

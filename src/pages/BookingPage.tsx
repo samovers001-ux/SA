@@ -107,7 +107,7 @@ export default function BookingPage() {
                   </div>
                   <h2 className="text-4xl font-display font-bold text-primary">Request Sent!</h2>
                   <p className="text-xl text-gray-600 max-w-lg mx-auto leading-relaxed">
-                    Thank you for choosing S&A Movers. Your booking details have been sent to <a href="mailto:info@example.com" className="font-bold text-primary hover:text-secondary underline decoration-dotted underline-offset-4 transition-colors">info@example.com</a>. 
+                    Thank you for choosing S&A Movers. Your booking details have been sent to <a href="mailto:info@sandamovers.ca" className="font-bold text-primary hover:text-secondary underline decoration-dotted underline-offset-4 transition-colors">info@sandamovers.ca</a>. 
                     A moving coordinator will review your request and get back to you within 24 hours.
                   </p>
                   <div className="pt-8 flex flex-col sm:flex-row gap-4 justify-center">
