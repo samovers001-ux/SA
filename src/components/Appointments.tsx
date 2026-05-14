@@ -28,7 +28,7 @@ export default function Appointments() {
             </div>
             <div className="flex items-center gap-3">
               <Mail className="text-secondary" size={20} />
-              <a href="mailto:info@sandamovers.ca" className="font-bold hover:text-secondary transition-colors underline decoration-dotted decoration-white/30 underline-offset-4">info@sandamovers.ca</a>
+              <a href="mailto:info@example.com" className="font-bold hover:text-secondary transition-colors underline decoration-dotted decoration-white/30 underline-offset-4">info@example.com</a>
             </div>
           </div>
         </div>
@@ -90,7 +90,7 @@ export default function Appointments() {
           </div>
 
           <a 
-            href="https://forms.gle/PQYducKjrjF22b1v5"
+            href="https://forms.gle/L9gPTg3f46TtZX4A6"
             target="_blank"
             rel="noopener noreferrer"
             className="w-full bg-secondary text-white py-4 rounded-lg font-bold text-lg hover:brightness-110 transition-all shadow-lg active:scale-95 block text-center"

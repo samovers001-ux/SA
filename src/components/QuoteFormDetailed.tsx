@@ -41,7 +41,7 @@ export default function QuoteFormDetailed() {
 
       const result = await response.json();
       if (result.success) {
-        window.location.href = 'https://forms.gle/Ho5PQ33AvubMNaL46';
+        window.location.href = 'https://forms.gle/L9gPTg3f46TtZX4A6';
       } else {
         alert(result.message || 'Something went wrong. Please try again.');
       }
@@ -89,7 +89,12 @@ export default function QuoteFormDetailed() {
             </div>
             
             <div className="space-y-4">
-              <Link to="/book" className="flex items-start space-x-4 p-4 bg-white rounded-lg border border-gray-100 shadow-sm transition-all hover:shadow-md hover:border-secondary group block">
+              <a 
+                href="https://forms.gle/L9gPTg3f46TtZX4A6" 
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-start space-x-4 p-4 bg-white rounded-lg border border-gray-100 shadow-sm transition-all hover:shadow-md hover:border-secondary group block"
+              >
                 <div className="bg-red-50 text-secondary p-2 rounded-lg group-hover:bg-red-100 transition-colors">
                   <Truck size={20} />
                 </div>
@@ -97,9 +102,14 @@ export default function QuoteFormDetailed() {
                   <h4 className="font-bold text-primary group-hover:text-secondary transition-colors">Local & Long Distance</h4>
                   <p className="text-gray-500 text-sm">Serving across Canada with a specialized fleet.</p>
                 </div>
-              </Link>
+              </a>
               
-              <Link to="/book" className="flex items-start space-x-4 p-4 bg-white rounded-lg border border-gray-100 shadow-sm transition-all hover:shadow-md hover:border-primary group block">
+              <a 
+                href="https://forms.gle/L9gPTg3f46TtZX4A6" 
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-start space-x-4 p-4 bg-white rounded-lg border border-gray-100 shadow-sm transition-all hover:shadow-md hover:border-primary group block"
+              >
                 <div className="bg-blue-50 text-primary p-2 rounded-lg group-hover:bg-blue-100 transition-colors">
                   <Box size={20} />
                 </div>
@@ -107,7 +117,7 @@ export default function QuoteFormDetailed() {
                   <h4 className="font-bold text-primary transition-colors">Packing & Unpacking</h4>
                   <p className="text-gray-500 text-sm">Full service options for a zero-effort transition.</p>
                 </div>
-              </Link>
+              </a>
             </div>
             
             <div className="p-8 bg-primary-container rounded-2xl text-white shadow-xl relative overflow-hidden">

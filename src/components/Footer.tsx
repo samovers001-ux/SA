@@ -43,10 +43,15 @@ export default function Footer() {
           <h4 className="text-xl font-bold mb-8 relative after:content-[''] after:absolute after:-bottom-2 after:left-0 after:w-12 after:h-1 after:bg-secondary">Quick Links</h4>
           <ul className="space-y-4">
             <li>
-              <Link to="/book" className="text-secondary font-bold hover:opacity-80 transition-all flex items-center gap-2 group">
+              <a 
+                href="https://forms.gle/L9gPTg3f46TtZX4A6" 
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-secondary font-bold hover:opacity-80 transition-all flex items-center gap-2 group"
+              >
                 <span className="w-1.5 h-1.5 rounded-full bg-secondary" />
                 BOOK ONLINE NOW
-              </Link>
+              </a>
             </li>
             {["Residential Moving", "Commercial Relocation", "Long Distance Moves", "Same Day Moving", "Last Minute Moving"].map(link => (
               <li key={link}>
@@ -72,7 +77,7 @@ export default function Footer() {
               <div className="w-10 h-10 rounded-full bg-secondary flex items-center justify-center group-hover:rotate-12 transition-transform">
                 <Mail size={18} />
               </div>
-              <a href="mailto:info@sandamovers.ca" className="opacity-80 hover:opacity-100 transition-opacity">info@sandamovers.ca</a>
+              <a href="mailto:info@example.com" className="opacity-80 hover:opacity-100 transition-opacity">info@example.com</a>
             </li>
             <li className="flex items-center gap-4 group">
               <div className="w-10 h-10 rounded-full bg-secondary flex items-center justify-center group-hover:rotate-12 transition-transform">

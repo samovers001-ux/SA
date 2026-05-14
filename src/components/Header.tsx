@@ -24,7 +24,7 @@ export default function Header() {
         <nav className="hidden md:flex gap-8 items-center">
           <Link to="/" className="text-secondary font-bold border-b-2 border-secondary py-1">Home</Link>
           <a href="/#services" className="text-gray-600 hover:text-primary transition-colors font-medium">Services</a>
-          <Link to="/quote" className="text-gray-600 hover:text-primary transition-colors font-medium">Get Quote</Link>
+          <a href="https://forms.gle/L9gPTg3f46TtZX4A6" target="_blank" rel="noopener noreferrer" className="text-gray-600 hover:text-primary transition-colors font-medium">Get Quote</a>
           <Link to="/about" className="text-gray-600 hover:text-primary transition-colors font-medium">About</Link>
           <Link to="/contact" className="text-gray-600 hover:text-primary transition-colors font-medium">Contact</Link>
         </nav>
@@ -37,9 +37,14 @@ export default function Header() {
             <Phone size={18} fill="currentColor" />
             +1 647 514 5024
           </a>
-          <Link to="/book" className="bg-primary text-white px-6 py-2 rounded-lg font-bold uppercase tracking-wider hover:bg-primary-container transition-colors shadow-sm">
+          <a 
+            href="https://forms.gle/L9gPTg3f46TtZX4A6" 
+            target="_blank"
+            rel="noopener noreferrer"
+            className="bg-primary text-white px-6 py-2 rounded-lg font-bold uppercase tracking-wider hover:bg-primary-container transition-colors shadow-sm"
+          >
             BOOK ONLINE
-          </Link>
+          </a>
           <button className="md:hidden text-primary">
             <Menu size={24} />
           </button>

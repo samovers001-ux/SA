@@ -27,8 +27,12 @@ async function startServer() {
       console.log("New Booking Received:", JSON.stringify(bookingData, null, 2));
 
       // Email options
-      const fromEmail = process.env.SMTP_USER || "info@sandamovers.ca";
-      const toEmail = "info@sandamovers.ca";
+      const fromEmail = process.env.SMTP_USER;
+      const toEmail = process.env.SMTP_USER;
+      
+      if (!toEmail) {
+        console.warn("SMTP_USER environment variable is missing. No recipient email defined.");
+      }
       
       const mailOptions = {
         from: `"S&A Movers Website" <${fromEmail}>`,
@@ -88,7 +92,7 @@ async function startServer() {
         console.log(`Connecting to SMTP: ${process.env.SMTP_HOST}:${process.env.SMTP_PORT}`);
         const transporter = nodemailer.createTransport({
           host: process.env.SMTP_HOST,
-          port: parseInt(process.env.SMTP_PORT || "465"),
+          port: parseInt(process.env.SMTP_PORT || "587"),
           secure: process.env.SMTP_SECURE === "true",
           auth: {
             user: process.env.SMTP_USER,
@@ -128,8 +132,8 @@ async function startServer() {
       
       console.log("New Quote Request Received:", JSON.stringify(quoteData, null, 2));
 
-      const fromEmail = process.env.SMTP_USER || "info@sandamovers.ca";
-      const toEmail = "info@sandamovers.ca";
+      const fromEmail = process.env.SMTP_USER;
+      const toEmail = process.env.SMTP_USER;
 
       const mailOptions = {
         from: `"S&A Movers Website" <${fromEmail}>`,
@@ -186,7 +190,7 @@ async function startServer() {
       if (process.env.SMTP_HOST && process.env.SMTP_USER && process.env.SMTP_PASS) {
         const transporter = nodemailer.createTransport({
           host: process.env.SMTP_HOST,
-          port: parseInt(process.env.SMTP_PORT || "465"),
+          port: parseInt(process.env.SMTP_PORT || "587"),
           secure: process.env.SMTP_SECURE === "true",
           auth: {
             user: process.env.SMTP_USER,

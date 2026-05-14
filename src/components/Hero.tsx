@@ -48,12 +48,22 @@ export default function Hero() {
             transition={{ delay: 0.3 }}
             className="flex flex-wrap gap-4"
           >
-            <Link to="/book" className="bg-secondary text-white px-8 py-4 rounded-lg font-bold text-lg hover:brightness-110 transition-all shadow-lg active:scale-95">
+            <a 
+              href="https://forms.gle/L9gPTg3f46TtZX4A6" 
+              target="_blank"
+              rel="noopener noreferrer"
+              className="bg-secondary text-white px-8 py-4 rounded-lg font-bold text-lg hover:brightness-110 transition-all shadow-lg active:scale-95"
+            >
               BOOK ONLINE
-            </Link>
-            <Link to="/quote" className="bg-white/10 backdrop-blur-md border border-white/30 text-white px-8 py-4 rounded-lg font-bold text-lg hover:bg-white/20 transition-all active:scale-95">
+            </a>
+            <a 
+              href="https://forms.gle/L9gPTg3f46TtZX4A6" 
+              target="_blank"
+              rel="noopener noreferrer"
+              className="bg-white/10 backdrop-blur-md border border-white/30 text-white px-8 py-4 rounded-lg font-bold text-lg hover:bg-white/20 transition-all active:scale-95"
+            >
               GET A QUOTE
-            </Link>
+            </a>
           </motion.div>
         </div>
 
@@ -68,9 +78,14 @@ export default function Hero() {
             Instant Quote Request
           </h2>
           <p className="text-gray-500 text-sm mb-6">Need a detailed price breakdown? Fill out our questionnaire and get a response within hours.</p>
-          <Link to="/quote" className="w-full bg-secondary text-white py-5 rounded-lg font-bold hover:brightness-110 transition-all shadow-xl block text-center uppercase tracking-widest text-lg">
+          <a 
+            href="https://forms.gle/L9gPTg3f46TtZX4A6" 
+            target="_blank"
+            rel="noopener noreferrer"
+            className="w-full bg-secondary text-white py-5 rounded-lg font-bold hover:brightness-110 transition-all shadow-xl block text-center uppercase tracking-widest text-lg"
+          >
             Start Detailed Quote
-          </Link>
+          </a>
           <div className="mt-8 pt-8 border-t border-gray-100 flex items-center gap-3">
             <div className="flex -space-x-2">
               {[
