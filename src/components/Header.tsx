@@ -1,4 +1,4 @@
-import { Phone, Menu } from 'lucide-react';
+import { Phone, Menu, MessageCircle } from 'lucide-react';
 import { motion } from 'motion/react';
 import { Link } from 'react-router-dom';
 
@@ -30,6 +30,15 @@ export default function Header() {
         </nav>
 
         <div className="flex items-center gap-4">
+          <a 
+            href="https://wa.link/rcezot"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex items-center justify-center bg-[#25D366] text-white p-2 rounded-lg hover:brightness-110 transition-all shadow-sm"
+            title="WhatsApp"
+          >
+            <MessageCircle size={24} fill="currentColor" />
+          </a>
           <a 
             href="tel:+16475145024" 
             className="hidden lg:flex items-center gap-2 bg-secondary text-white px-4 py-2 rounded-full font-bold transition-transform hover:scale-105"

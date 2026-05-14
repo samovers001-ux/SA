@@ -1,4 +1,4 @@
-import { Phone, Mail, MapPin, Facebook, Twitter, Instagram, Linkedin, Share2, MessageSquare } from 'lucide-react';
+import { Phone, Mail, MapPin, Facebook, Twitter, Instagram, Linkedin, Share2, MessageCircle } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
 export default function Footer() {
@@ -25,14 +25,14 @@ export default function Footer() {
           </p>
           <div className="flex gap-4">
             {[
-              { Icon: Share2, href: "#" },
-              { Icon: MessageSquare, href: "#" },
-              { Icon: Facebook, href: "https://www.facebook.com/" },
-              { Icon: Twitter, href: "https://x.com/" },
-              { Icon: Instagram, href: "https://www.instagram.com/" },
-              { Icon: Linkedin, href: "#" }
+              { Icon: Share2, href: "#", color: "bg-white/10" },
+              { Icon: MessageCircle, href: "https://wa.link/rcezot", color: "bg-[#25D366]" },
+              { Icon: Facebook, href: "https://www.facebook.com/", color: "bg-white/10" },
+              { Icon: Twitter, href: "https://x.com/", color: "bg-white/10" },
+              { Icon: Instagram, href: "https://www.instagram.com/", color: "bg-white/10" },
+              { Icon: Linkedin, href: "#", color: "bg-white/10" }
             ].map((social, i) => (
-              <a key={i} href={social.href} target={social.href !== "#" ? "_blank" : undefined} rel={social.href !== "#" ? "noopener noreferrer" : undefined} className="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-secondary transition-all hover:scale-110 group">
+              <a key={i} href={social.href} target={social.href !== "#" ? "_blank" : undefined} rel={social.href !== "#" ? "noopener noreferrer" : undefined} className={`w-10 h-10 rounded-full ${social.color} flex items-center justify-center hover:bg-secondary transition-all hover:scale-110 group`}>
                 <social.Icon size={18} className="group-hover:animate-pulse" />
               </a>
             ))}
@@ -42,6 +42,17 @@ export default function Footer() {
         <div>
           <h4 className="text-xl font-bold mb-8 relative after:content-[''] after:absolute after:-bottom-2 after:left-0 after:w-12 after:h-1 after:bg-secondary">Quick Links</h4>
           <ul className="space-y-4">
+            <li>
+              <a 
+                href="https://wa.link/rcezot" 
+                target="_blank"
+                rel="noopener noreferrer"
+                className="bg-[#25D366] text-white font-bold px-4 py-2 rounded-lg hover:brightness-110 transition-all flex items-center gap-2 w-fit mb-4"
+              >
+                <MessageCircle size={20} fill="currentColor" />
+                CHAT ON WHATSAPP
+              </a>
+            </li>
             <li>
               <a 
                 href="https://forms.gle/L9gPTg3f46TtZX4A6" 
