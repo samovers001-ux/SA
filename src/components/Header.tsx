@@ -26,7 +26,7 @@ export default function Header() {
   const navLinks = [
     { title: 'Home', href: '/' },
     { title: 'Services', href: '/services' },
-    { title: 'Get Quote', href: 'https://docs.google.com/forms/d/e/1FAIpQLSc8fLVJ878s0Zm9XKnMwVh-NITLNBGm0hulAp0fAfRUCe7Tmg/viewform?usp=header', isExternal: true },
+    { title: 'Get Quote', href: 'https://docs.google.com/forms/d/e/1FAIpQLSfrE2j9Pbu9-QQQAMoK7ZqxMDMqbZ-FaQFvoI3aNBKOBJGQfg/viewform?usp=header', isExternal: true },
     { title: 'About', href: '/about' },
     { title: 'Contact', href: '/contact' },
   ];
@@ -92,7 +92,7 @@ export default function Header() {
             +1 647 514 5024
           </a>
           <a 
-            href="https://docs.google.com/forms/d/e/1FAIpQLSc8fLVJ878s0Zm9XKnMwVh-NITLNBGm0hulAp0fAfRUCe7Tmg/viewform?usp=header" 
+            href="https://docs.google.com/forms/d/e/1FAIpQLSfrE2j9Pbu9-QQQAMoK7ZqxMDMqbZ-FaQFvoI3aNBKOBJGQfg/viewform?usp=header" 
             target="_blank"
             rel="noopener noreferrer"
             className="hidden sm:block bg-primary text-white px-4 md:px-6 py-2 rounded-lg font-bold uppercase tracking-wider hover:bg-primary-container transition-colors shadow-sm text-sm md:text-base"
@@ -142,7 +142,7 @@ export default function Header() {
               ))}
               <div className="pt-4 border-t border-gray-50 flex flex-col gap-4">
                 <a 
-                  href="https://docs.google.com/forms/d/e/1FAIpQLSc8fLVJ878s0Zm9XKnMwVh-NITLNBGm0hulAp0fAfRUCe7Tmg/viewform?usp=header" 
+                  href="https://docs.google.com/forms/d/e/1FAIpQLSfrE2j9Pbu9-QQQAMoK7ZqxMDMqbZ-FaQFvoI3aNBKOBJGQfg/viewform?usp=header" 
                   target="_blank"
                   rel="noopener noreferrer"
                   className="bg-primary text-white w-full py-4 rounded-xl font-bold text-center uppercase tracking-widest shadow-lg"

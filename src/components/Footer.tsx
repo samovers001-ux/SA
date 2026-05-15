@@ -55,7 +55,7 @@ export default function Footer() {
             </li>
             <li>
               <a 
-                href="https://docs.google.com/forms/d/e/1FAIpQLSc8fLVJ878s0Zm9XKnMwVh-NITLNBGm0hulAp0fAfRUCe7Tmg/viewform?usp=header" 
+                href="https://docs.google.com/forms/d/e/1FAIpQLSfrE2j9Pbu9-QQQAMoK7ZqxMDMqbZ-FaQFvoI3aNBKOBJGQfg/viewform?usp=header" 
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-secondary font-bold hover:opacity-80 transition-all flex items-center gap-2 group"

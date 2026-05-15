@@ -38,7 +38,8 @@ function ExternalRedirect({ url }: { url: string }) {
 }
 
 export default function App() {
-  const EXTERNAL_URL = "https://docs.google.com/forms/d/e/1FAIpQLSc8fLVJ878s0Zm9XKnMwVh-NITLNBGm0hulAp0fAfRUCe7Tmg/viewform?usp=header";
+  const BOOKING_URL = "https://docs.google.com/forms/d/e/1FAIpQLSfrE2j9Pbu9-QQQAMoK7ZqxMDMqbZ-FaQFvoI3aNBKOBJGQfg/viewform?usp=header";
+  const QUOTE_URL = "https://docs.google.com/forms/d/e/1FAIpQLSfrE2j9Pbu9-QQQAMoK7ZqxMDMqbZ-FaQFvoI3aNBKOBJGQfg/viewform?usp=header";
 
   return (
     <BrowserRouter>
@@ -46,11 +47,11 @@ export default function App() {
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/services" element={<ServicesPage />} />
-        <Route path="/book" element={<ExternalRedirect url={EXTERNAL_URL} />} />
+        <Route path="/book" element={<ExternalRedirect url={BOOKING_URL} />} />
         <Route path="/privacy-policy" element={<PrivacyPolicyPage />} />
         <Route path="/terms" element={<TermsPage />} />
         <Route path="/cookies" element={<CookiesPage />} />
-        <Route path="/quote" element={<ExternalRedirect url={EXTERNAL_URL} />} />
+        <Route path="/quote" element={<ExternalRedirect url={QUOTE_URL} />} />
         <Route path="/about" element={<AboutPage />} />
         <Route path="/contact" element={<ContactPage />} />
       </Routes>

@@ -50,7 +50,7 @@ export default function Hero() {
             className="flex flex-col sm:flex-row gap-4"
           >
             <a 
-              href="https://docs.google.com/forms/d/e/1FAIpQLSc8fLVJ878s0Zm9XKnMwVh-NITLNBGm0hulAp0fAfRUCe7Tmg/viewform?usp=header" 
+              href="https://docs.google.com/forms/d/e/1FAIpQLSfrE2j9Pbu9-QQQAMoK7ZqxMDMqbZ-FaQFvoI3aNBKOBJGQfg/viewform?usp=header" 
               target="_blank"
               rel="noopener noreferrer"
               className="bg-secondary text-white px-8 py-4 rounded-lg font-bold text-center text-lg hover:brightness-110 transition-all shadow-lg active:scale-95"
@@ -58,7 +58,7 @@ export default function Hero() {
               BOOK ONLINE
             </a>
             <a 
-              href="https://docs.google.com/forms/d/e/1FAIpQLSc8fLVJ878s0Zm9XKnMwVh-NITLNBGm0hulAp0fAfRUCe7Tmg/viewform?usp=header" 
+              href="https://docs.google.com/forms/d/e/1FAIpQLSfrE2j9Pbu9-QQQAMoK7ZqxMDMqbZ-FaQFvoI3aNBKOBJGQfg/viewform?usp=header" 
               target="_blank"
               rel="noopener noreferrer"
               className="bg-white/10 backdrop-blur-md border border-white/30 text-white px-8 py-4 rounded-lg font-bold text-center text-lg hover:bg-white/20 transition-all active:scale-95"
@@ -80,7 +80,7 @@ export default function Hero() {
           </h2>
           <p className="text-gray-500 text-sm mb-6">Need a detailed price breakdown? Fill out our questionnaire and get a response within hours.</p>
           <a 
-            href="https://docs.google.com/forms/d/e/1FAIpQLSc8fLVJ878s0Zm9XKnMwVh-NITLNBGm0hulAp0fAfRUCe7Tmg/viewform?usp=header" 
+            href="https://docs.google.com/forms/d/e/1FAIpQLSfrE2j9Pbu9-QQQAMoK7ZqxMDMqbZ-FaQFvoI3aNBKOBJGQfg/viewform?usp=header" 
             target="_blank"
             rel="noopener noreferrer"
             className="w-full bg-secondary text-white py-5 rounded-lg font-bold hover:brightness-110 transition-all shadow-xl block text-center uppercase tracking-widest text-lg"
