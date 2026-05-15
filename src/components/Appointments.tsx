@@ -100,20 +100,13 @@ export default function Appointments() {
         </motion.div>
       </div>
 
-      <div className="absolute right-0 top-0 h-full w-1/3 opacity-10 pointer-events-none hidden lg:block group">
+      <div className="absolute right-0 top-0 h-full w-1/3 opacity-10 pointer-events-none hidden lg:block">
         <img 
           src="https://lh3.googleusercontent.com/aida-public/AB6AXuBZq4DbdB5MBWIEzSoEyOv4vwmVJ8qF_Mg8ip0aaj3GNkSKODakI6B6KYKhYE45KcJXsGgEI5ot11ghSZan1wJoCsc4a6lNnZjmor9HEt-wHw31zKOoKMAWjA69npPC55GZxCvDxVKplf8yBkMYCxUTIfYS7CCajuLTx4k6_wdcnsHhyHBQ-ybPHvq4bXGzRKwMTtnF0bqZ_lqgTTatxFaEK3lWiU7zgF8m4xJOQOPzOhI_GsAk-8qwFDrdWaiSZI-XgUl9f-M_Nus" 
           className="h-full w-full object-cover" 
           alt="S&A Movers Branded Cartons and Supplies" 
           referrerPolicy="no-referrer"
         />
-        {/* Branding Overlay on Background Boxes */}
-        <div className="absolute top-1/4 right-1/2 bg-white px-2 py-0.5 border border-primary/20 shadow-sm opacity-60 group-hover:opacity-100 transition-opacity">
-          <p className="text-primary font-black text-[10px] uppercase tracking-tighter">S & A MOVERS</p>
-        </div>
-        <div className="absolute bottom-1/3 right-1/4 bg-white/80 px-2 py-0.5 border border-primary/10 shadow-sm opacity-40 group-hover:opacity-80 transition-opacity rotate-12">
-          <p className="text-primary font-black text-[8px] uppercase tracking-tighter">PROTECTED BY S&A</p>
-        </div>
       </div>
     </section>
   );

@@ -91,6 +91,23 @@ export default function ContactPage() {
 
                     <div className="flex gap-6 p-6 rounded-2xl bg-surface-container-low border border-gray-100">
                       <div className="w-14 h-14 bg-secondary text-white rounded-xl flex items-center justify-center shrink-0 shadow-lg shadow-secondary/20">
+                        <MapPin size={28} />
+                      </div>
+                      <div>
+                        <h3 className="font-bold text-gray-900 mb-1 uppercase tracking-wider text-sm">Address</h3>
+                        <a 
+                          href="https://www.google.com/maps/search/?api=1&query=251+Manitoba+Street+M8Y+0C7+Etobicoke+ON"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="text-lg font-black text-primary hover:text-secondary transition-colors"
+                        >
+                          251, Manitoba Street, M8Y 0C7 Etobicoke, ON
+                        </a>
+                      </div>
+                    </div>
+
+                    <div className="flex gap-6 p-6 rounded-2xl bg-surface-container-low border border-gray-100">
+                      <div className="w-14 h-14 bg-secondary text-white rounded-xl flex items-center justify-center shrink-0 shadow-lg shadow-secondary/20">
                         <Clock size={28} />
                       </div>
                       <div>

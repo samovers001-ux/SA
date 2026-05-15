@@ -164,7 +164,7 @@ export default function QuotePage() {
                           value={formData.email}
                           onChange={(e) => setFormData({...formData, email: e.target.value})}
                           className="w-full px-6 py-4 rounded-2xl bg-gray-50 border-none focus:ring-2 focus:ring-primary outline-none transition-all font-medium" 
-                          placeholder="john@gmail.com"
+                          placeholder="john@example.com"
                         />
                       </div>
                     </div>

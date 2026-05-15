@@ -37,7 +37,7 @@ function ExternalRedirect({ url }: { url: string }) {
 }
 
 export default function App() {
-  const EXTERNAL_URL = "https://forms.gle/L9gPTg3f46TtZX4A6";
+  const EXTERNAL_URL = "https://docs.google.com/forms/d/e/1FAIpQLSc8fLVJ878s0Zm9XKnMwVh-NITLNBGm0hulAp0fAfRUCe7Tmg/viewform?usp=header";
 
   return (
     <BrowserRouter>

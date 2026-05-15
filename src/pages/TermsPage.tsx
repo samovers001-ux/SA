@@ -152,7 +152,16 @@ export default function TermsPage() {
                 </div>
                 <div className="space-y-2 opacity-90">
                   <p className="text-xl font-bold">S & A Movers</p>
-                  <p>Etobicoke, Ontario, Canada</p>
+                  <p>
+                    <a 
+                      href="https://www.google.com/maps/search/?api=1&query=251+Manitoba+Street+M8Y+0C7+Etobicoke+ON" 
+                      target="_blank" 
+                      rel="noopener noreferrer" 
+                      className="underline hover:text-secondary transition-colors"
+                    >
+                      251, Manitoba Street, M8Y 0C7 Etobicoke, ON
+                    </a>
+                  </p>
                   <p>Email: <a href="mailto:info@sandamovers.ca" className="underline hover:text-secondary transition-colors">info@sandamovers.ca</a></p>
                   <p>Website: <a href="https://sandamovers.ca" className="underline hover:text-secondary transition-colors">sandamovers.ca</a></p>
                 </div>

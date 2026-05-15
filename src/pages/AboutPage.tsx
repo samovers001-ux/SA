@@ -119,10 +119,6 @@ export default function AboutPage() {
                   alt="Our Team"
                   className="relative rounded-3xl shadow-2xl"
                 />
-                {/* Team Branding */}
-                <div className="absolute bottom-6 right-6 bg-primary/80 backdrop-blur-md px-4 py-2 rounded-xl border border-white/20 shadow-xl opacity-90">
-                  <p className="text-white font-black text-xs tracking-widest uppercase">S & A Movers Certified Team</p>
-                </div>
               </div>
               <div className="space-y-8">
                 <h2 className="text-4xl font-display font-black text-primary">A Complete Relocation Solution</h2>

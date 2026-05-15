@@ -5,20 +5,13 @@ import { Link } from 'react-router-dom';
 export default function Hero() {
   return (
     <section id="home" className="relative min-h-[600px] flex items-center overflow-hidden">
-      <div className="absolute inset-0 z-0 group">
+      <div className="absolute inset-0 z-0">
         <img 
           className="w-full h-full object-cover brightness-50" 
           src="https://lh3.googleusercontent.com/aida-public/AB6AXuA7Kf7ffjzitVSzCL-KnPSjQQ61V9VpolZd95sOBC3A3dZVlf9iT4C08pgUt1pKbDoAVR67jlm8sx7d2SVGm0GWM-vZ3mX2jJvvHg_FE5zOsx-UpEy6vNzWjEij9mk17zvrCP6oNJ6reUOvp-Qd8ri_pu9yvEeBBL1-M0qxNSkneQ5MMtsDjvFX6tWPBx89Ewa-kZES1IM5I-5o-DK7FvTt2_p4NLssuBSHq_mncsjijbed7033huJoE3d6gBUAMx7WIEBhK23poW4"
           alt="S&A Movers Professional Moving Truck"
           referrerPolicy="no-referrer"
         />
-        {/* Dynamic Branding Overlay */}
-        <div className="absolute top-[48%] left-[28%] -translate-y-1/2 -translate-x-1/2 bg-white/10 backdrop-blur-[1px] border border-white/10 px-6 py-2 rounded shadow-2xl skew-y-[-2deg] opacity-80 group-hover:opacity-100 transition-opacity">
-          <p className="text-white font-black text-3xl md:text-4xl tracking-tighter uppercase italic drop-shadow-lg">S & A MOVERS</p>
-        </div>
-        <div className="absolute top-[52%] left-[30%] -translate-y-1/2 -translate-x-1/2 opacity-60 group-hover:opacity-90 transition-opacity">
-          <p className="text-secondary font-black text-xs md:text-sm tracking-[0.3em] uppercase">PROFESSIONAL LOGISTICS</p>
-        </div>
       </div>
       
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center py-20">

@@ -41,7 +41,7 @@ export default function QuoteFormDetailed() {
 
       const result = await response.json();
       if (result.success) {
-        window.location.href = 'https://forms.gle/L9gPTg3f46TtZX4A6';
+        window.location.href = 'https://docs.google.com/forms/d/e/1FAIpQLSc8fLVJ878s0Zm9XKnMwVh-NITLNBGm0hulAp0fAfRUCe7Tmg/viewform?usp=header';
       } else {
         alert(result.message || 'Something went wrong. Please try again.');
       }
@@ -90,7 +90,7 @@ export default function QuoteFormDetailed() {
             
             <div className="space-y-4">
               <a 
-                href="https://forms.gle/L9gPTg3f46TtZX4A6" 
+                href="https://docs.google.com/forms/d/e/1FAIpQLSc8fLVJ878s0Zm9XKnMwVh-NITLNBGm0hulAp0fAfRUCe7Tmg/viewform?usp=header" 
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-start space-x-4 p-4 bg-white rounded-lg border border-gray-100 shadow-sm transition-all hover:shadow-md hover:border-secondary group block"
@@ -105,7 +105,7 @@ export default function QuoteFormDetailed() {
               </a>
               
               <a 
-                href="https://forms.gle/L9gPTg3f46TtZX4A6" 
+                href="https://docs.google.com/forms/d/e/1FAIpQLSc8fLVJ878s0Zm9XKnMwVh-NITLNBGm0hulAp0fAfRUCe7Tmg/viewform?usp=header" 
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-start space-x-4 p-4 bg-white rounded-lg border border-gray-100 shadow-sm transition-all hover:shadow-md hover:border-primary group block"

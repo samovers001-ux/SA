@@ -16,10 +16,6 @@ export default function Highlights() {
               alt="S&A Movers Branded Logistics"
               referrerPolicy="no-referrer"
             />
-            {/* Branding Overlay on Truck Side */}
-            <div className="absolute top-[32%] left-[48%] -translate-x-1/2 bg-white/20 backdrop-blur-[1px] px-6 py-2 border border-white/10 shadow-sm opacity-80 group-hover:opacity-100 transition-opacity skew-x-[-3deg] rotate-[-2deg]">
-              <p className="text-primary font-black text-xl md:text-2xl uppercase tracking-tighter italic">S & A MOVERS</p>
-            </div>
             <div className="absolute inset-0 bg-gradient-to-t from-primary/90 via-primary/20 to-transparent" />
             <div className="absolute bottom-0 left-0 p-6 md:p-10">
               <h3 className="text-3xl md:text-4xl font-bold text-white mb-2 underline decoration-secondary underline-offset-8">Commercial <br className="hidden sm:block"/>Relocation</h3>

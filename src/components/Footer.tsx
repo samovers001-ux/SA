@@ -94,7 +94,14 @@ export default function Footer() {
               <div className="w-10 h-10 rounded-full bg-secondary flex items-center justify-center group-hover:rotate-12 transition-transform">
                 <MapPin size={18} />
               </div>
-              <span className="opacity-80">251, Manitoba Street, M8Y 0C7 Etobicoke, ON</span>
+              <a 
+                href="https://www.google.com/maps/search/?api=1&query=251+Manitoba+Street+M8Y+0C7+Etobicoke+ON" 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                className="opacity-80 hover:opacity-100 transition-opacity hover:text-secondary"
+              >
+                251, Manitoba Street, M8Y 0C7 Etobicoke, ON
+              </a>
             </li>
           </ul>
         </div>

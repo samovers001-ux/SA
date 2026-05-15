@@ -116,9 +116,9 @@ export default function Header() {
             initial={{ opacity: 0, height: 0 }}
             animate={{ opacity: 1, height: 'auto' }}
             exit={{ opacity: 0, height: 0 }}
-            className="md:hidden bg-white border-t border-gray-100 overflow-y-auto max-h-[85vh] shadow-xl"
+            className="md:hidden bg-white border-t border-gray-100 overflow-hidden"
           >
-            <div className="px-4 py-6 space-y-6">
+            <div className="px-4 py-6 space-y-4">
               {navLinks.map((link) => (
                 link.isExternal ? (
                   <a 
@@ -126,7 +126,7 @@ export default function Header() {
                     href={link.href} 
                     target="_blank" 
                     rel="noopener noreferrer" 
-                    className="block text-2xl font-black text-primary hover:text-secondary transition-colors"
+                    className="block text-xl font-bold text-gray-800 hover:text-secondary transition-colors"
                   >
                     {link.title}
                   </a>
@@ -134,27 +134,26 @@ export default function Header() {
                   <Link 
                     key={link.title}
                     to={link.href} 
-                    onClick={() => setIsMenuOpen(false)}
-                    className={`block text-2xl font-black ${location.pathname === link.href ? 'text-secondary' : 'text-primary'} hover:text-secondary transition-colors`}
+                    className={`block text-xl font-bold ${location.pathname === link.href ? 'text-secondary' : 'text-gray-800'} hover:text-secondary transition-colors`}
                   >
                     {link.title}
                   </Link>
                 )
               ))}
-              <div className="pt-6 border-t border-gray-100 flex flex-col gap-4 pb-8">
+              <div className="pt-4 border-t border-gray-50 flex flex-col gap-4">
                 <a 
                   href="https://docs.google.com/forms/d/e/1FAIpQLSc8fLVJ878s0Zm9XKnMwVh-NITLNBGm0hulAp0fAfRUCe7Tmg/viewform?usp=header" 
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="bg-primary text-white w-full py-5 rounded-2xl font-black text-center uppercase tracking-widest shadow-lg active:scale-95 transition-all text-lg"
+                  className="bg-primary text-white w-full py-4 rounded-xl font-bold text-center uppercase tracking-widest shadow-lg"
                 >
                   BOOK ONLINE
                 </a>
                 <a 
                   href="tel:+16475145024" 
-                  className="flex items-center justify-center gap-3 bg-secondary text-white w-full py-5 rounded-2xl font-black text-center text-lg active:scale-95 transition-all"
+                  className="flex items-center justify-center gap-3 bg-secondary text-white w-full py-4 rounded-xl font-bold text-center"
                 >
-                  <Phone size={24} fill="currentColor" />
+                  <Phone size={20} fill="currentColor" />
                   +1 647 514 5024
                 </a>
               </div>
