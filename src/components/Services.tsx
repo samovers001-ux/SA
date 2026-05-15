@@ -52,12 +52,32 @@ export default function Services() {
               whileHover={{ y: -10 }}
               className="bg-white rounded-lg overflow-hidden border border-gray-200 hover:shadow-xl transition-shadow group"
             >
-              <div className="h-48 overflow-hidden">
+              <div className="h-48 overflow-hidden relative">
                 <img 
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" 
                   src={service.image} 
                   alt={service.title}
+                  referrerPolicy="no-referrer"
                 />
+                
+                {/* Contextual Branding Overlays */}
+                {service.title === "Last Minute Moving" && (
+                  <div className="absolute top-[45%] left-[55%] -translate-x-1/2 bg-white/20 backdrop-blur-[1px] px-4 py-1 border border-white/10 shadow-sm opacity-80 group-hover:opacity-100 transition-opacity skew-x-[-2deg] rotate-[-1deg]">
+                    <p className="text-primary font-black text-xs uppercase tracking-tighter italic">S & A MOVERS</p>
+                  </div>
+                )}
+
+                {service.title === "Same Day Moving" && (
+                  <div className="absolute top-[60%] left-[45%] -translate-x-1/2 bg-[#d2b48c]/40 px-2 py-0.5 border border-black/5 opacity-70 group-hover:opacity-100 transition-opacity">
+                    <p className="text-black/60 font-bold text-[8px] uppercase tracking-tighter">S & A MOVERS</p>
+                  </div>
+                )}
+
+                {(service.title !== "Last Minute Moving" && service.title !== "Same Day Moving") && (
+                  <div className="absolute top-4 left-4 bg-white/90 backdrop-blur-sm px-2 py-0.5 rounded border border-primary/20 shadow-sm opacity-0 group-hover:opacity-100 transition-opacity">
+                    <p className="text-primary font-black text-[10px] uppercase tracking-tighter">S & A MOVERS</p>
+                  </div>
+                )}
               </div>
               <div className="p-6">
                 <h3 className="text-xl font-bold text-primary mb-3">{service.title}</h3>

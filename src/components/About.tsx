@@ -33,12 +33,20 @@ export default function About() {
           
           <div className="relative">
             <div className="absolute -top-10 -left-10 w-32 h-32 bg-secondary/20 rounded-full blur-3xl"></div>
-            <div className="relative rounded-2xl overflow-hidden shadow-2xl border-4 border-white/10">
+            <div className="relative rounded-2xl overflow-hidden shadow-2xl border-4 border-white/10 group">
               <img 
                 src="https://lh3.googleusercontent.com/aida-public/AB6AXuAa2DtoI7QYV6Es4HPKBKSsuEYLMtaKRvksVqW6ReJhI4aAASMJslX5_3kQU7PLZXK2jqp94vtlUmOlea5zpM6EWFVSiibcNOSN4E_qYQ1WREwWd8rnm4dQ2MZi4MgT4qkowoXhuFeHY89ypNNaCsi6Dzrw7uXPuU1UFEvTabpcCVV-SNxPtVW8yQRAZ2ti_DSYmCD5XhfKU-ATm-0XQSvF65rKa_naU2Ppfpi0mvRlQnMJ02kHyOlM3dgaCMMmCqxw3d0pUhjcipM" 
-                alt="About Us" 
+                alt="S&A Movers Operations" 
                 className="w-full h-full object-cover"
+                referrerPolicy="no-referrer"
               />
+              {/* Branding Stick on Boxes */}
+              <div className="absolute top-1/3 left-1/2 -translate-x-1/2 bg-white/90 px-3 py-1 border border-primary/20 shadow-sm opacity-90 rotate-[-5deg] group-hover:rotate-0 transition-transform">
+                <p className="text-primary font-black text-[10px] uppercase tracking-tighter">S & A MOVERS</p>
+              </div>
+              <div className="absolute top-[45%] left-[65%] -translate-x-1/2 bg-[#d2b48c]/90 px-2 py-0.5 border border-black/10 shadow-sm opacity-80 rotate-[3deg] group-hover:rotate-0 transition-transform">
+                <p className="text-black/70 font-black text-[8px] uppercase tracking-tighter">S & A MOVERS</p>
+              </div>
               <div className="absolute inset-0 bg-gradient-to-t from-primary/60 to-transparent"></div>
               <div className="absolute bottom-8 left-8">
                 <p className="text-2xl font-bold">Trusted Experts</p>

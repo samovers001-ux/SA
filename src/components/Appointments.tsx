@@ -13,7 +13,7 @@ export default function Appointments() {
     <section id="contact" className="relative bg-primary py-20 overflow-hidden">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center relative z-10">
         <div className="text-white">
-          <h2 className="text-5xl font-display font-bold mb-6">Appointments</h2>
+          <h2 className="text-3xl sm:text-5xl font-display font-bold mb-6">Appointments</h2>
           <p className="text-lg opacity-90 mb-8 leading-relaxed max-w-lg">
             Easily schedule your moving or cleaning service with our simple and convenient appointment booking system. At S&A Movers, we understand that your time is valuable, so we've made it quick and hassle-free to choose a date and time that works best for you. Whether you need assistance with an apartment move, office relocation, or professional cleaning, you can book your service in just a few clicks.
           </p>
@@ -90,7 +90,7 @@ export default function Appointments() {
           </div>
 
           <a 
-            href="https://forms.gle/L9gPTg3f46TtZX4A6"
+            href="https://docs.google.com/forms/d/e/1FAIpQLSc8fLVJ878s0Zm9XKnMwVh-NITLNBGm0hulAp0fAfRUCe7Tmg/viewform?usp=header"
             target="_blank"
             rel="noopener noreferrer"
             className="w-full bg-secondary text-white py-4 rounded-lg font-bold text-lg hover:brightness-110 transition-all shadow-lg active:scale-95 block text-center"
@@ -100,12 +100,20 @@ export default function Appointments() {
         </motion.div>
       </div>
 
-      <div className="absolute right-0 top-0 h-full w-1/3 opacity-10 pointer-events-none hidden lg:block">
+      <div className="absolute right-0 top-0 h-full w-1/3 opacity-10 pointer-events-none hidden lg:block group">
         <img 
           src="https://lh3.googleusercontent.com/aida-public/AB6AXuBZq4DbdB5MBWIEzSoEyOv4vwmVJ8qF_Mg8ip0aaj3GNkSKODakI6B6KYKhYE45KcJXsGgEI5ot11ghSZan1wJoCsc4a6lNnZjmor9HEt-wHw31zKOoKMAWjA69npPC55GZxCvDxVKplf8yBkMYCxUTIfYS7CCajuLTx4k6_wdcnsHhyHBQ-ybPHvq4bXGzRKwMTtnF0bqZ_lqgTTatxFaEK3lWiU7zgF8m4xJOQOPzOhI_GsAk-8qwFDrdWaiSZI-XgUl9f-M_Nus" 
           className="h-full w-full object-cover" 
-          alt="Calendar" 
+          alt="S&A Movers Branded Cartons and Supplies" 
+          referrerPolicy="no-referrer"
         />
+        {/* Branding Overlay on Background Boxes */}
+        <div className="absolute top-1/4 right-1/2 bg-white px-2 py-0.5 border border-primary/20 shadow-sm opacity-60 group-hover:opacity-100 transition-opacity">
+          <p className="text-primary font-black text-[10px] uppercase tracking-tighter">S & A MOVERS</p>
+        </div>
+        <div className="absolute bottom-1/3 right-1/4 bg-white/80 px-2 py-0.5 border border-primary/10 shadow-sm opacity-40 group-hover:opacity-80 transition-opacity rotate-12">
+          <p className="text-primary font-black text-[8px] uppercase tracking-tighter">PROTECTED BY S&A</p>
+        </div>
       </div>
     </section>
   );

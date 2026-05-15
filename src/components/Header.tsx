@@ -1,8 +1,36 @@
-import { Phone, Menu, MessageCircle } from 'lucide-react';
-import { motion } from 'motion/react';
-import { Link } from 'react-router-dom';
+import { Phone, Menu, MessageCircle, X } from 'lucide-react';
+import { motion, AnimatePresence } from 'motion/react';
+import { Link, useLocation } from 'react-router-dom';
+import { useState, useEffect } from 'react';
 
 export default function Header() {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const location = useLocation();
+
+  // Close menu when route changes
+  useEffect(() => {
+    setIsMenuOpen(false);
+  }, [location]);
+
+  // Close menu when resizing to desktop
+  useEffect(() => {
+    const handleResize = () => {
+      if (window.innerWidth >= 768) {
+        setIsMenuOpen(false);
+      }
+    };
+    window.addEventListener('resize', handleResize);
+    return () => window.removeEventListener('resize', handleResize);
+  }, []);
+
+  const navLinks = [
+    { title: 'Home', href: '/' },
+    { title: 'Services', href: '/#services' },
+    { title: 'Get Quote', href: 'https://docs.google.com/forms/d/e/1FAIpQLSc8fLVJ878s0Zm9XKnMwVh-NITLNBGm0hulAp0fAfRUCe7Tmg/viewform?usp=header', isExternal: true },
+    { title: 'About', href: '/about' },
+    { title: 'Contact', href: '/contact' },
+  ];
+
   return (
     <header className="sticky top-0 z-50 bg-white shadow-sm w-full">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-between items-center py-4">
@@ -10,26 +38,43 @@ export default function Header() {
           <img 
             src="/logo.png" 
             alt="S&A Movers Logo" 
-            className="h-12 w-auto object-contain"
+            className="h-10 md:h-12 w-auto object-contain"
+            referrerPolicy="no-referrer"
             onError={(e) => {
               (e.target as HTMLImageElement).style.display = 'none';
               (e.target as HTMLImageElement).nextElementSibling?.classList.remove('hidden');
             }}
           />
-          <div className="hidden text-2xl font-black text-primary tracking-tight">
+          <div className="hidden text-xl md:text-2xl font-black text-primary tracking-tight">
             S&A Movers
           </div>
         </Link>
         
         <nav className="hidden md:flex gap-8 items-center">
-          <Link to="/" className="text-secondary font-bold border-b-2 border-secondary py-1">Home</Link>
-          <a href="/#services" className="text-gray-600 hover:text-primary transition-colors font-medium">Services</a>
-          <a href="https://forms.gle/L9gPTg3f46TtZX4A6" target="_blank" rel="noopener noreferrer" className="text-gray-600 hover:text-primary transition-colors font-medium">Get Quote</a>
-          <Link to="/about" className="text-gray-600 hover:text-primary transition-colors font-medium">About</Link>
-          <Link to="/contact" className="text-gray-600 hover:text-primary transition-colors font-medium">Contact</Link>
+          {navLinks.map((link) => (
+            link.isExternal ? (
+              <a 
+                key={link.title}
+                href={link.href} 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                className="text-gray-600 hover:text-primary transition-colors font-medium"
+              >
+                {link.title}
+              </a>
+            ) : (
+              <Link 
+                key={link.title}
+                to={link.href} 
+                className={`${location.pathname === link.href ? 'text-secondary font-bold' : 'text-gray-600 hover:text-primary'} transition-colors font-medium`}
+              >
+                {link.title}
+              </Link>
+            )
+          ))}
         </nav>
 
-        <div className="flex items-center gap-4">
+        <div className="flex items-center gap-2 md:gap-4">
           <a 
             href="https://wa.link/rcezot"
             target="_blank"
@@ -37,7 +82,7 @@ export default function Header() {
             className="flex items-center justify-center bg-[#25D366] text-white p-2 rounded-lg hover:brightness-110 transition-all shadow-sm"
             title="WhatsApp"
           >
-            <MessageCircle size={24} fill="currentColor" />
+            <MessageCircle size={20} md:size={24} fill="currentColor" />
           </a>
           <a 
             href="tel:+16475145024" 
@@ -47,18 +92,76 @@ export default function Header() {
             +1 647 514 5024
           </a>
           <a 
-            href="https://forms.gle/L9gPTg3f46TtZX4A6" 
+            href="https://docs.google.com/forms/d/e/1FAIpQLSc8fLVJ878s0Zm9XKnMwVh-NITLNBGm0hulAp0fAfRUCe7Tmg/viewform?usp=header" 
             target="_blank"
             rel="noopener noreferrer"
-            className="bg-primary text-white px-6 py-2 rounded-lg font-bold uppercase tracking-wider hover:bg-primary-container transition-colors shadow-sm"
+            className="hidden sm:block bg-primary text-white px-4 md:px-6 py-2 rounded-lg font-bold uppercase tracking-wider hover:bg-primary-container transition-colors shadow-sm text-sm md:text-base"
           >
             BOOK ONLINE
           </a>
-          <button className="md:hidden text-primary">
-            <Menu size={24} />
+          <button 
+            className="md:hidden text-primary p-1"
+            onClick={() => setIsMenuOpen(!isMenuOpen)}
+            aria-label="Toggle menu"
+          >
+            {isMenuOpen ? <X size={28} /> : <Menu size={28} />}
           </button>
         </div>
       </div>
+
+      {/* Mobile Menu */}
+      <AnimatePresence>
+        {isMenuOpen && (
+          <motion.div
+            initial={{ opacity: 0, height: 0 }}
+            animate={{ opacity: 1, height: 'auto' }}
+            exit={{ opacity: 0, height: 0 }}
+            className="md:hidden bg-white border-t border-gray-100 overflow-y-auto max-h-[85vh] shadow-xl"
+          >
+            <div className="px-4 py-6 space-y-6">
+              {navLinks.map((link) => (
+                link.isExternal ? (
+                  <a 
+                    key={link.title}
+                    href={link.href} 
+                    target="_blank" 
+                    rel="noopener noreferrer" 
+                    className="block text-2xl font-black text-primary hover:text-secondary transition-colors"
+                  >
+                    {link.title}
+                  </a>
+                ) : (
+                  <Link 
+                    key={link.title}
+                    to={link.href} 
+                    onClick={() => setIsMenuOpen(false)}
+                    className={`block text-2xl font-black ${location.pathname === link.href ? 'text-secondary' : 'text-primary'} hover:text-secondary transition-colors`}
+                  >
+                    {link.title}
+                  </Link>
+                )
+              ))}
+              <div className="pt-6 border-t border-gray-100 flex flex-col gap-4 pb-8">
+                <a 
+                  href="https://docs.google.com/forms/d/e/1FAIpQLSc8fLVJ878s0Zm9XKnMwVh-NITLNBGm0hulAp0fAfRUCe7Tmg/viewform?usp=header" 
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="bg-primary text-white w-full py-5 rounded-2xl font-black text-center uppercase tracking-widest shadow-lg active:scale-95 transition-all text-lg"
+                >
+                  BOOK ONLINE
+                </a>
+                <a 
+                  href="tel:+16475145024" 
+                  className="flex items-center justify-center gap-3 bg-secondary text-white w-full py-5 rounded-2xl font-black text-center text-lg active:scale-95 transition-all"
+                >
+                  <Phone size={24} fill="currentColor" />
+                  +1 647 514 5024
+                </a>
+              </div>
+            </div>
+          </motion.div>
+        )}
+      </AnimatePresence>
     </header>
   );
 }

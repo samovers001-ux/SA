@@ -5,12 +5,20 @@ import { Link } from 'react-router-dom';
 export default function Hero() {
   return (
     <section id="home" className="relative min-h-[600px] flex items-center overflow-hidden">
-      <div className="absolute inset-0 z-0">
+      <div className="absolute inset-0 z-0 group">
         <img 
           className="w-full h-full object-cover brightness-50" 
           src="https://lh3.googleusercontent.com/aida-public/AB6AXuA7Kf7ffjzitVSzCL-KnPSjQQ61V9VpolZd95sOBC3A3dZVlf9iT4C08pgUt1pKbDoAVR67jlm8sx7d2SVGm0GWM-vZ3mX2jJvvHg_FE5zOsx-UpEy6vNzWjEij9mk17zvrCP6oNJ6reUOvp-Qd8ri_pu9yvEeBBL1-M0qxNSkneQ5MMtsDjvFX6tWPBx89Ewa-kZES1IM5I-5o-DK7FvTt2_p4NLssuBSHq_mncsjijbed7033huJoE3d6gBUAMx7WIEBhK23poW4"
-          alt="Professional moving team"
+          alt="S&A Movers Professional Moving Truck"
+          referrerPolicy="no-referrer"
         />
+        {/* Dynamic Branding Overlay */}
+        <div className="absolute top-[48%] left-[28%] -translate-y-1/2 -translate-x-1/2 bg-white/10 backdrop-blur-[1px] border border-white/10 px-6 py-2 rounded shadow-2xl skew-y-[-2deg] opacity-80 group-hover:opacity-100 transition-opacity">
+          <p className="text-white font-black text-3xl md:text-4xl tracking-tighter uppercase italic drop-shadow-lg">S & A MOVERS</p>
+        </div>
+        <div className="absolute top-[52%] left-[30%] -translate-y-1/2 -translate-x-1/2 opacity-60 group-hover:opacity-90 transition-opacity">
+          <p className="text-secondary font-black text-xs md:text-sm tracking-[0.3em] uppercase">PROFESSIONAL LOGISTICS</p>
+        </div>
       </div>
       
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center py-20">
@@ -28,16 +36,16 @@ export default function Hero() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.1 }}
-            className="text-5xl lg:text-6xl mb-6 font-display font-bold leading-tight"
+            className="text-4xl sm:text-5xl lg:text-6xl mb-6 font-display font-bold leading-tight"
           >
-            Stress Free Logistics <br/>For Your Next Move
+            Stress Free Logistics <br className="hidden sm:block"/>For Your Next Move
           </motion.h1>
           
           <motion.p 
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.2 }}
-            className="text-lg lg:text-xl mb-8 opacity-90 max-w-lg leading-relaxed font-sans"
+            className="text-base sm:text-lg lg:text-xl mb-8 opacity-90 max-w-lg leading-relaxed font-sans"
           >
             Premium moving services in Toronto and across Canada. We handle your belongings with the same care we'd give our own.
           </motion.p>
@@ -46,21 +54,21 @@ export default function Hero() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.3 }}
-            className="flex flex-wrap gap-4"
+            className="flex flex-col sm:flex-row gap-4"
           >
             <a 
-              href="https://forms.gle/L9gPTg3f46TtZX4A6" 
+              href="https://docs.google.com/forms/d/e/1FAIpQLSc8fLVJ878s0Zm9XKnMwVh-NITLNBGm0hulAp0fAfRUCe7Tmg/viewform?usp=header" 
               target="_blank"
               rel="noopener noreferrer"
-              className="bg-secondary text-white px-8 py-4 rounded-lg font-bold text-lg hover:brightness-110 transition-all shadow-lg active:scale-95"
+              className="bg-secondary text-white px-8 py-4 rounded-lg font-bold text-center text-lg hover:brightness-110 transition-all shadow-lg active:scale-95"
             >
               BOOK ONLINE
             </a>
             <a 
-              href="https://forms.gle/L9gPTg3f46TtZX4A6" 
+              href="https://docs.google.com/forms/d/e/1FAIpQLSc8fLVJ878s0Zm9XKnMwVh-NITLNBGm0hulAp0fAfRUCe7Tmg/viewform?usp=header" 
               target="_blank"
               rel="noopener noreferrer"
-              className="bg-white/10 backdrop-blur-md border border-white/30 text-white px-8 py-4 rounded-lg font-bold text-lg hover:bg-white/20 transition-all active:scale-95"
+              className="bg-white/10 backdrop-blur-md border border-white/30 text-white px-8 py-4 rounded-lg font-bold text-center text-lg hover:bg-white/20 transition-all active:scale-95"
             >
               GET A QUOTE
             </a>
@@ -79,7 +87,7 @@ export default function Hero() {
           </h2>
           <p className="text-gray-500 text-sm mb-6">Need a detailed price breakdown? Fill out our questionnaire and get a response within hours.</p>
           <a 
-            href="https://forms.gle/L9gPTg3f46TtZX4A6" 
+            href="https://docs.google.com/forms/d/e/1FAIpQLSc8fLVJ878s0Zm9XKnMwVh-NITLNBGm0hulAp0fAfRUCe7Tmg/viewform?usp=header" 
             target="_blank"
             rel="noopener noreferrer"
             className="w-full bg-secondary text-white py-5 rounded-lg font-bold hover:brightness-110 transition-all shadow-xl block text-center uppercase tracking-widest text-lg"

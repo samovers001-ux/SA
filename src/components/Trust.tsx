@@ -20,7 +20,7 @@ const reviews = [
     name: "Amina Diop",
     location: "North York, ON",
     text: "S&A Movers are top-notch. Arrived on time and worked tirelessly. The pricing was transparent and fair.",
-    image: "https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?auto=format&fit=crop&q=80&w=200&h=200",
+    image: "https://images.unsplash.com/photo-1531123897727-8f129e16fd3c?auto=format&fit=crop&q=80&w=200&h=200",
     rating: 5
   },
   {

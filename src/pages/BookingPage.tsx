@@ -46,7 +46,7 @@ export default function BookingPage() {
 
       const result = await response.json();
       if (result.success) {
-        window.location.href = 'https://forms.gle/Ho5PQ33AvubMNaL46';
+        window.location.href = 'https://docs.google.com/forms/d/e/1FAIpQLSc8fLVJ878s0Zm9XKnMwVh-NITLNBGm0hulAp0fAfRUCe7Tmg/viewform?usp=header';
       } else {
         alert(result.message || 'Something went wrong. Please try again or call us.');
       }

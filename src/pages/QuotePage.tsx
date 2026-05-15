@@ -32,7 +32,7 @@ export default function QuotePage() {
       });
       
       if (response.ok) {
-        window.location.href = 'https://forms.gle/Ho5PQ33AvubMNaL46';
+        window.location.href = 'https://docs.google.com/forms/d/e/1FAIpQLSc8fLVJ878s0Zm9XKnMwVh-NITLNBGm0hulAp0fAfRUCe7Tmg/viewform?usp=header';
       }
     } catch (error) {
       console.error('Error submitting quote:', error);
@@ -164,7 +164,7 @@ export default function QuotePage() {
                           value={formData.email}
                           onChange={(e) => setFormData({...formData, email: e.target.value})}
                           className="w-full px-6 py-4 rounded-2xl bg-gray-50 border-none focus:ring-2 focus:ring-primary outline-none transition-all font-medium" 
-                          placeholder="john@example.com"
+                          placeholder="john@gmail.com"
                         />
                       </div>
                     </div>
