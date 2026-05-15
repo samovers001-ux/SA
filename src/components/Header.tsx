@@ -25,7 +25,7 @@ export default function Header() {
 
   const navLinks = [
     { title: 'Home', href: '/' },
-    { title: 'Services', href: '/#services' },
+    { title: 'Services', href: '/services' },
     { title: 'Get Quote', href: 'https://docs.google.com/forms/d/e/1FAIpQLSc8fLVJ878s0Zm9XKnMwVh-NITLNBGm0hulAp0fAfRUCe7Tmg/viewform?usp=header', isExternal: true },
     { title: 'About', href: '/about' },
     { title: 'Contact', href: '/contact' },

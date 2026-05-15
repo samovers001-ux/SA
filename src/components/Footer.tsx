@@ -66,10 +66,10 @@ export default function Footer() {
             </li>
             {["Residential Moving", "Commercial Relocation", "Long Distance Moves", "Same Day Moving", "Last Minute Moving"].map(link => (
               <li key={link}>
-                <a href="#" className="opacity-70 hover:opacity-100 hover:text-secondary transition-all flex items-center gap-2 group">
+                <Link to="/services" className="opacity-70 hover:opacity-100 hover:text-secondary transition-all flex items-center gap-2 group">
                   <span className="w-1.5 h-1.5 rounded-full bg-secondary opacity-0 group-hover:opacity-100 transition-all" />
                   {link}
-                </a>
+                </Link>
               </li>
             ))}
           </ul>

@@ -63,8 +63,13 @@ export default function Services() {
               <div className="p-6">
                 <h3 className="text-xl font-bold text-primary mb-3">{service.title}</h3>
                 <p className="text-gray-600 mb-6 leading-relaxed">{service.description}</p>
-                <a href="#" className="inline-flex items-center gap-2 text-secondary font-bold hover:gap-3 transition-all">
-                  LEARN MORE <ArrowRight size={18} />
+                <a 
+                  href="https://docs.google.com/forms/d/e/1FAIpQLSc8fLVJ878s0Zm9XKnMwVh-NITLNBGm0hulAp0fAfRUCe7Tmg/viewform?usp=header" 
+                  target="_blank" 
+                  rel="noopener noreferrer" 
+                  className="inline-flex items-center gap-2 text-secondary font-bold hover:gap-3 transition-all"
+                >
+                  GET A QUOTE <ArrowRight size={18} />
                 </a>
               </div>
             </motion.div>
