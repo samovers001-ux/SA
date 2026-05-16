@@ -38,8 +38,8 @@ function ExternalRedirect({ url }: { url: string }) {
 }
 
 export default function App() {
-  const BOOKING_URL = "https://docs.google.com/forms/d/e/1FAIpQLSfrE2j9Pbu9-QQQAMoK7ZqxMDMqbZ-FaQFvoI3aNBKOBJGQfg/viewform?usp=header";
-  const QUOTE_URL = "https://docs.google.com/forms/d/e/1FAIpQLSfrE2j9Pbu9-QQQAMoK7ZqxMDMqbZ-FaQFvoI3aNBKOBJGQfg/viewform?usp=header";
+  const BOOKING_URL = "https://forms.gle/GD4wexbbFHJChrVu5";
+  const QUOTE_URL = "https://forms.gle/GD4wexbbFHJChrVu5";
 
   return (
     <BrowserRouter>

@@ -90,7 +90,7 @@ export default function Appointments() {
           </div>
 
           <a 
-            href="https://docs.google.com/forms/d/e/1FAIpQLSfrE2j9Pbu9-QQQAMoK7ZqxMDMqbZ-FaQFvoI3aNBKOBJGQfg/viewform?usp=header"
+            href="https://forms.gle/GD4wexbbFHJChrVu5"
             target="_blank"
             rel="noopener noreferrer"
             className="w-full bg-secondary text-white py-4 rounded-lg font-bold text-lg hover:brightness-110 transition-all shadow-lg active:scale-95 block text-center"

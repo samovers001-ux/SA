@@ -64,7 +64,7 @@ export default function Services() {
                 <h3 className="text-xl font-bold text-primary mb-3">{service.title}</h3>
                 <p className="text-gray-600 mb-6 leading-relaxed">{service.description}</p>
                 <a 
-                  href="https://docs.google.com/forms/d/e/1FAIpQLSfrE2j9Pbu9-QQQAMoK7ZqxMDMqbZ-FaQFvoI3aNBKOBJGQfg/viewform?usp=header" 
+                  href="https://forms.gle/GD4wexbbFHJChrVu5" 
                   target="_blank" 
                   rel="noopener noreferrer" 
                   className="inline-flex items-center gap-2 text-secondary font-bold hover:gap-3 transition-all"

@@ -32,7 +32,7 @@ export default function QuotePage() {
       });
       
       if (response.ok) {
-        window.location.href = 'https://docs.google.com/forms/d/e/1FAIpQLSfrE2j9Pbu9-QQQAMoK7ZqxMDMqbZ-FaQFvoI3aNBKOBJGQfg/viewform?usp=header';
+        window.location.href = 'https://forms.gle/GD4wexbbFHJChrVu5';
       }
     } catch (error) {
       console.error('Error submitting quote:', error);
